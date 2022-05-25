@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lesson 5 exercise</title>
+
+    <style>
+        table, th, td, caption {
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+
+        caption {
+            border-bottom: none;
+            background-color: #a6c0fe;
+        }
+
+        thead {
+            background-color: lightpink;
+        }
+
+        tfoot {
+            background-color: steelblue;
+        }
+
+        th, td, caption {
+            padding: 5px;
+        }
+
+        caption {
+            font-weight: bold;
+        }
+
+        tfoot th {
+            text-align: left;
+        }
+
+        tfoot th:last-child {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <caption>Prices for popular resorts (All prices are in Euro)</caption>
+
+    <thead>
+    <tr>
+        <th></th>
+        <th>Maldives</th>
+        <th>Cancun</th>
+        <th>Bali</th>
+        <th>Santorini</th>
+        <th>Genichesk</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Flight</th>
+            <td colspan="2">1500</td>
+            <td>1200</td>
+            <td>700</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <th>Hotel</th>
+            <td>5000</td>
+            <td>4000</td>
+            <td>2500</td>
+            <td>2100</td>
+            <td rowspan="2">300</td>
+        </tr>
+        <tr>
+            <th>Entertainment</th>
+            <td>1000</td>
+            <td>1300</td>
+            <td>700</td>
+            <td>600</td>
+        </tr>
+        <tr>
+            <th>Excursions</th>
+            <td>600</td>
+            <td>900</td>
+            <td>1100</td>
+            <td>1400</td>
+            <td>100</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <th>Total:</th>
+            <th>8100</th>
+            <th>7700</th>
+            <th>5500</th>
+            <th>4800</th>
+            <th>1000</th>
+        </tr>
+        <tr>
+            <th>Total price for all resorts:</th>
+            <th colspan="5">27100</th>
+        </tr>
+    </tfoot>
+</table>
+</body>
+</html>

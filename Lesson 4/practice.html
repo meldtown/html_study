@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lesson 4 practice</title>
+
+    <style>
+        body {
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Image basics -->
+<img src="img/maldives.jpeg" alt="Maldives"><br>
+<img src="img/not-existed-image.jpeg" alt="Maldives"><br>
+
+<!-- Types of images -->
+<img src="img/cat.jpeg" alt="Cat"><br>
+<img src="img/dog.png" alt="Dog"><br>
+<img src="img/homer-simpson.svg" alt="Homer Simpson"><br>
+
+<!-- Demo -->
+<div id="some_content">
+    <img src="img/example.jpeg" alt="Example of raster and vector graphics">
+</div>
+
+<!-- Responsive images -->
+<picture>
+    <source media="(min-width: 1024px)" srcset="https://picsum.photos/600/600">
+    <br>
+    <source media="(min-width: 768px)" srcset="https://picsum.photos/300/300">
+    <br>
+    <source media="(min-width: 360px)" srcset="https://picsum.photos/100/100">
+    <br>
+    <img src="https://picsum.photos/300/300" alt="Just image"><br>
+</picture>
+
+<!-- Sizes -->
+<img width="500" src="img/cat.jpeg" alt="Cat"><br>
+<img width="500" height="200" src="img/cat.jpeg" alt="Cat"><br>
+
+<!-- Figure captions -->
+<!-- Image with semantic description -->
+<figure>
+    <img src="https://picsum.photos/300/300" alt="Just image" />
+    <figcaption>It is a simple description for a picture above</figcaption>
+</figure>
+
+<!-- Images with semantic description -->
+<figure>
+    <img src="https://picsum.photos/300/300" alt="Just image" />
+    <img src="https://picsum.photos/300/300" alt="Just image" />
+    <img src="https://picsum.photos/300/300" alt="Just image" />
+    <figcaption>
+        <p>It is a simple description for a couple pictures above.It is a simple description for a couple pictures above.It is a simple description for a couple pictures above</p>
+    </figcaption>
+</figure>
+
+<!-- Paths -->
+
+<!-- Absolute -->
+<img src="/Lesson%204/img/cat.jpeg"><br>
+
+<!-- Relative -->
+<img src="img/cat.jpeg"><br>
+<img src="./img/cat.jpeg"><br>
+<img src="../images/mozilla.png"><br>
+<img src="../../some-folder/some-image.png"><br>
+
+<!-- External -->
+<img src="http://cdn.motorpage.ru/Photos/800/2D0E.jpg" alt="Gelendvagen"><br>
+
+<!-- Anchors -->
+
+<!-- External -->
+<a href="https://google.com">Google</a><br>
+
+<!-- Local HTML file -->
+<a href="example/index.html">Local HTML file</a><br>
+
+<!-- Local anchor -->
+<a href="#some_content">Move to some content</a><br>
+
+<!-- External HTML file anchor -->
+<a href="example/index.html#some_content">Move to some external HTML file content</a><br>
+
+<!-- Content types -->
+<!-- Download link -->
+<a href="img/cat.jpeg" download>Download</a><br>
+<hr>
+
+<!-- Open link in new tab -->
+<a href="https://youtube.com" target="_blank">Youtube</a><br>
+<hr>
+
+<!-- Open link in new tab -->
+<a href="tel:+123-32-23">+123-32-23</a><br>
+<a href="mailto:test@test.com">My e-mail</a><br>
+<a href="skype:test">Skype Call</a><br>
+
+<!-- Buttons -->
+<!-- Simple buttons -->
+<button type="button">Button</button>
+<button type="submit">Button</button>
+<button type="reset">Button</button>
+<hr>
+
+<!-- Button with autofocus -->
+<button type="button" autofocus>Button</button>
+<hr>
+
+<!-- Disabled Button -->
+<button type="button" disabled>Button</button>
+<hr>
+
+</body>
+</html>
